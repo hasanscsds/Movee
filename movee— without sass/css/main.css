@@ -1,0 +1,690 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("woff");
+}
+
+
+a [title="kholdarovkhasan@gmail.com"]{
+    color: coral;
+}
+
+* {
+    box-sizing: border-box;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0em;
+    font-style: normal;
+}
+
+
+body {
+    width: 100%;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.header {
+    background-color: #FED100;
+    position: relative;
+}
+
+.language-box{
+    width: 50px;
+    top: 100px;
+    right: 0;
+    position: fixed;
+    background-color: #FF352B;
+    cursor: pointer;
+}
+.language-box:hover{
+    width: 55px;
+    color: #333333;
+
+}
+.language-box:hover +span{
+    color: #333333;
+
+}
+.language-box span{
+    color: #ffffff;
+    font-size: 16px;
+    text-align: left;
+    padding: 7px 15px 7px 10px;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-content{
+    padding: 40px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px
+}
+
+.header-list {
+    margin: 7px 0;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header-list li + li {
+    padding-left: 45px;
+}
+
+.h-list {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.header-phone {
+    margin: 5px 0;
+}
+
+.h-number {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.tell{
+    text-decoration: underline;
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.header-service {
+    width: 480px;
+    margin: 0;
+}
+
+.header-service h1 {
+    margin: 23px 0;
+    color: #333333;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 88.83px;
+}
+
+.prize,
+.text-title h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36.57px;
+}
+
+.header-text h3{
+    text-align: left;
+}
+
+.header-order-btn{
+    padding: 50px 0;
+    position: relative;
+}
+
+.order {
+    padding: 15px 105px;
+    background-color: #FF352B;
+    border: none;
+    outline: none;
+    color: #F2F2F2;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    cursor: pointer;
+}
+
+.header-services-box {
+    width: 546px;
+    margin: 67px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-label {
+    width: 130px;
+    display: flex;
+}
+
+.services-label img {
+    width: 52px;
+    padding-right: 10px;
+}
+
+.rectangle3 {
+    width: 360px;
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.rectangle2 {
+    position: absolute;
+    right: 50px;
+    bottom: 170px;
+}
+
+.call-vector{
+    position: relative;
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+    cursor: pointer;
+}
+
+.call-border {
+    width: 100px;
+    height: 100px;
+    background: #3D9BE9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 50%;
+    background-image: url("../images/Vector.svg");
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    animation-name: btn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+}
+
+.call-box {
+    width: 136px;
+    height: 136px;
+    background: #3D9BE9;
+    border-radius: 50%;
+    opacity: 0.3;
+    animation-name: btn;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes btn {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.content{
+    margin: 0;
+    padding: 47px 0;
+}
+
+.content-label h3{
+    margin: 48px 0;
+}
+
+.content-cards{
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 44%;
+    display: flex;
+}
+
+.card-number h1{
+    width: 62px;
+    margin: 8px 42px 0 0;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 61px;
+    text-align: left;
+}
+
+.card-name h4{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+.quality,
+.prizes{
+    text-align: center;
+}
+
+.prizes{
+    margin: 57px 0;
+}
+
+.prizes-text{
+    margin: 15px 0;
+}
+
+.prizes-cards{
+    margin: 45px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prizes-cards .prizes-card+.prizes-card{
+    margin-left: 20;
+}
+
+.prizes-card{
+    width: 350px;
+    padding-bottom: 50px;
+    border: 1px solid #ebebeb;
+}
+
+.prizes-card:hover{
+    border: 1px solid #FED100;
+}
+.prizes-card:active{
+    border: 1px solid #FED100;
+}
+
+.prizes-card h1{
+    margin: 47px 0;
+}
+.prizes-card p{
+    margin: 13px 0;
+}
+.prize{
+    margin: 52px 0;
+}
+
+.order-btn{
+    width: 250px;
+    margin: 0;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 14px 77px;
+    background-color: #FED100;
+}
+
+.quality{
+    padding: 47px 0;
+}
+
+.quality-top{
+    position: relative;
+}
+
+.quality-btn {
+    margin: 45px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.quality-text{
+    margin: 15px;
+}
+
+.owl-next,
+.owl-prev{
+    position: absolute;
+    bottom: 300px;
+
+}
+.owl-next{
+right: -60px;
+}
+.owl-prev{
+left: -60px;
+}
+
+.owl-next img,
+.owl-prev img{
+    width: 35px;
+}
+
+.quality-btn button{
+    width: 200px;
+    margin: 10px 0;
+    padding: 13px 10px;
+    border: 1px solid #ebebeb;
+    background-color: transparent;
+}
+
+
+.quality-btn button:hover{
+    border: 1px solid #fed100;
+}
+.quality-btn button:active{
+    border: 1px solid #fed100;
+}
+
+.quality-btn button+button{
+    margin-left: 20px;
+}
+
+
+.quality-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quality-card{
+    margin: 52px 100px;
+    text-align: left;
+}
+
+.quality-card h1{
+    margin: 10px;
+}
+.quality-card p{
+    margin: 28px 0;
+}
+
+/*.quality-check p{
+    margin: 28px 0;
+}
+
+.quality-order-btn{
+    margin: 0;
+}*/
+
+
+.reviews{
+    padding: 40px 0;
+    background-color: #FED100;
+}
+
+.reviews-label {
+    margin: 60px 0;
+}
+
+.reviews-cards{
+    margin: 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-card{
+    width: 350px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.reviews-card h1{
+    margin: 0;
+}
+.reviews-date{
+    margin: 10px 0;
+}
+
+.star{
+    margin: 0 5px;
+    color: #FF352B;
+}
+
+.reviews-text{
+    margin: 10px 0;
+    height: 147px;
+}
+.read{
+    margin: 18px 0;
+    text-decoration: underline;
+}
+
+.reviews-order-btn{
+    text-align: center;
+}
+
+.reviews-btn{
+    margin: 50px auto;
+    background-color: transparent;
+    padding: 13px 64px;
+    border: 1px solid #333333;
+}
+
+.input-data-top{
+    width: 1000px;
+    margin: 124px auto;
+}
+
+.input-label h3{
+    text-align: left;
+}
+
+.read{
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.input-box{
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input-box input{
+    width: 280px;
+    height: 40px;
+    margin-right: 70px;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #333333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    outline: none;
+
+}
+
+.input-box-btn{
+    margin: 47px 0 0;
+}
+
+.input-order-btn{
+    padding: 0;
+}
+
+.input-order-btn button{
+    width: 250px;
+    padding: 13px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.red-btn-1,
+.red-btn-2{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+}
+
+.btn-back-box-1,
+.btn-back-box-2{
+    position: absolute;
+    width: 250px;
+    height: 52px;
+    border: 1px solid #FED100;
+    bottom: -10px;
+    left: 10px;
+    z-index: 1;
+}
+.btn-back-box-1{
+    width: 318px !important;
+    height: 60px;
+    border: 1px solid #ffffff;
+}
+
+.checkbox-box{
+    margin: 20px 0;
+    display: flex;
+}
+
+#checkbox {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 0 0;
+    border: 1px solid #333333;
+}
+
+.checkbox-box label{
+    margin: 0;
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.015em;
+
+}
+
+.location{
+    height: 660px;
+    padding: 200px;
+    background-image: url("../images/Rectangle\ 21.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.contacts-card{
+    width: fit-content;
+    height: 260px;
+    box-shadow: 0 0 10px 1px rgba(51, 51, 51, 1);
+    padding: 35px;
+    background-color: #ffffff;
+}
+
+.contacts-text p{
+    margin: 20px 0;
+}
+
+.yellow-tick{
+    color: #FED100;
+}
+
+.contacts-icons{
+    float: right;
+}
+.contacts-icons img+img{
+    padding-left: 17px;
+}
+
+.bottom{
+    background-color: #FED100;
+}
+
+.bottom-cards{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-card p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.bottom-card button{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-card li{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.contacts-gmail{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 20px 0;
+}
+.bottom-number{
+    margin: 5px auto;
+}
+
+
+@media (min-width: 0) and (max-width: 640px) {
+    body {
+        width: 640px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-list {
+        visibility: hidden;
+    }
+    .header-phone {
+        margin: 5px 0;
+
+    }
+    .h-number {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+}
+
+
+
